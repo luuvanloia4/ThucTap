@@ -1,0 +1,133 @@
+@font-face{
+    font-family: japaneseFont;
+    src: url(../fonts/glyphicons-halflings-regular.eot);
+}
+
+body {
+    margin: 0px;
+}
+
+div.pre-header {
+    height: 35.41px;
+    background-color:#F5F5F5;
+    border-bottom: 1px solid #D5D5D5;
+}
+
+div.header {
+    height: 83.61px;
+    background-color:#FFFFFF;
+}
+
+div.header p {
+    text-align: center;
+    font-size: 36px;
+    color: #4A4A4A;
+    height: 47.21px;
+    padding-top: 8px;
+    margin: 0px;
+
+}
+
+div.nav {
+    background-color: #F58E0B;
+    height: 100px;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+
+div.nav p {
+    text-align: center;
+    font-size: 36px;
+    color: #FFFFFF;
+    padding-top: 20px;
+    margin:0px;
+}
+
+div.content {
+    border: 1px solid  #FFCA86;
+    border-radius: 5px;
+    background-color: #F5F5F5;
+    margin-top: 20px;
+    padding: 10px 20px;
+}
+
+.span-required {
+    display:inline-block;
+    color: #F84008;
+    font-size: 14px;
+    border: 1px solid #F55123;
+    border-radius: 5px;
+    padding: 2px 5px;
+    justify-self: left;
+}
+
+.input-required {
+    border: 1px solid #F55123;
+    border-radius: 3px;
+    background-color: #FEF3F2;
+}
+
+.btn {
+    width: 100%;
+}
+
+div.btn button {
+    height: 52px;
+    border-radius: 5px;
+    margin: 11px 0px;
+    font-size: 24px;
+}
+
+.button-cancel {
+    border: 1px solid #9B9B9B;
+    color: #4A4A4A;
+    background-color: #FFFFFF;
+    margin-right: 15px;
+}
+
+.button-accept {
+    border: 1px solid #979797;
+    color: #FFFFFF;
+    background-image: linear-gradient(to right, #F58E0B, #F84008);
+    margin-left: 15px;
+}
+
+div.btn button.print {
+    height: 52px;
+    width: 570px;
+    background-image: linear-gradient(to right, #F58E0B, #F84008);
+    border-radius: 5px;
+    border: 0px;
+    margin-top: 10px;
+    margin-bottom: 11px;
+    font-size: 24px;
+    color: #FFFFFF;
+}
+
+div.footer {
+    height: 30px;
+    width: 100%;
+    border-top: 2px solid #F58E0B;
+    position: fixed;
+    bottom: 0px;
+    background-color: #FFFFFF;
+}
+
+div.footer p {
+    color: #4A4A4A;
+    font-size: 19px;
+    text-align: center;
+    margin: auto;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.w-100{
+    width:100%
+}
