@@ -5,37 +5,37 @@
 
 body {
     margin: 0px;
+    position: relative;
 }
 
-div.pre-header {
+.pre-header {
     height: 35.41px;
     background-color:#F5F5F5;
     border-bottom: 1px solid #D5D5D5;
 }
 
-div.header {
+.header {
     height: 83.61px;
     background-color:#FFFFFF;
 }
 
-div.header p {
+.header p {
     text-align: center;
     font-size: 36px;
     color: #4A4A4A;
     height: 47.21px;
     padding-top: 8px;
     margin: 0px;
-
 }
 
-div.nav {
+.nav {
     background-color: #F58E0B;
     height: 100px;
     margin-block-start: 0px;
     margin-block-end: 0px;
 }
 
-div.nav p {
+.nav p {
     text-align: center;
     font-size: 36px;
     color: #FFFFFF;
@@ -43,22 +43,35 @@ div.nav p {
     margin:0px;
 }
 
-div.content {
+.content {
     border: 1px solid  #FFCA86;
     border-radius: 5px;
     background-color: #F5F5F5;
-    margin-top: 20px;
-    padding: 10px 20px;
+    margin: 20px 10%;
+    
+}
+
+.content p{
+    color: #4A4A4A;
+    font-size: 1.3rem;
+    flex-grow: 1;
 }
 
 .span-required {
     display:inline-block;
     color: #F84008;
-    font-size: 14px;
+    font-size: 1rem;
     border: 1px solid #F55123;
-    border-radius: 5px;
-    padding: 2px 5px;
-    justify-self: left;
+    border-radius: 3px;
+    padding: 0px 5px;
+    width: auto;
+    height: 20px;
+}
+
+.input-confirm {
+    height: 30px;
+    margin-top: 10px;
+    margin-bottom: 11px;
 }
 
 .input-required {
@@ -71,11 +84,12 @@ div.content {
     width: 100%;
 }
 
-div.btn button {
+.btn button {
     height: 52px;
     border-radius: 5px;
     margin: 11px 0px;
     font-size: 24px;
+    width: 100%;
 }
 
 .button-cancel {
@@ -92,7 +106,7 @@ div.btn button {
     margin-left: 15px;
 }
 
-div.btn button.print {
+.btn button.print {
     height: 52px;
     width: 570px;
     background-image: linear-gradient(to right, #F58E0B, #F84008);
@@ -124,10 +138,70 @@ div.footer p {
     display: flex;
 }
 
+.d-flex-left {
+    display: flex;
+    justify-content: left;
+}
+
+.d-flex-right {
+    display: flex;
+    justify-content: right;
+}
+
 .justify-content-between {
     justify-content: space-between;
 }
 
-.w-100{
-    width:100%
+.row-confirm {
+    margin: 0px;
+    border-bottom: 1px dotted #FFCA86;
+}
+
+.col-confirm {
+    padding-top: 20px;
+    border-right: 1px solid #FFCA86;
+    height: 51px;
+}
+
+.form-confirm {
+    margin-bottom: 0px;
+}
+
+.p-confirm {
+    margin-bottom: 0px;
+}
+
+.button-align-left {
+    text-align: left;
+}
+
+.button-align-right {
+    text-align: right;
+}
+
+.container-header {
+    padding: 0px;
+}
+
+.menu-hamburger {
+    height: 100%;
+    background-color: #F58E0B;
+    opacity: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 100vh;
+    right: 100vw;
+    transition: 1s;
+    /*margin-top: -100%;*/
+}
+
+.icon-menu {
+    width: 5rem;
+    height: 5rem;
+}
+
+.pad-0 {
+    padding: 0px;
 }

@@ -8,156 +8,224 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/bootstrap-select.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        @media screen and (max-width: 992px) {
+    .header {
+        display: flex;
+        height: 12vw;
+    }
+    .header p {
+        margin-left:3vw;
+        font-size:5vw;
+    }
+    .nav {
+        height: 13vw;
+    }
+    .nav p {
+        font-size:6vw;
+        padding-top:3vw
+    }
+    .content {
+        border: 0.3vw solid #FFCA86;
+        margin: 6vw 0;
+    }
+    .content p{
+        font-size: 4vw;
+    }
+    .span-required {
+        font-size: 3vw;
+        padding: 0.5vw 2vw;
+        border: 0.3vw solid #F55123;
+        height: 6vw;
+    }
+    .input-confirm {
+        font-size: 4vw;
+        height: 8vw;
+        margin-top: 2vw;
+        margin-bottom: 2vw;
+    }
+    .input-required {
+        border: 0.3vw solid #F55123;
+    }
+    .row-confirm {
+        border-bottom: 0.3vw dotted #FFCA86;
+    }
+    .col-confirm {
+        padding-top: 2vw;
+        border: 0px;
+        height: 9vw;
+    }
+    .btn button {
+        height: 10vw;
+        width: 70vw;
+    }
+}
+    </style>
     <title>Orange Cloud 7</title>
 </head>
 <body>
-    <div class="pre-header"></div>
-    <div class="header">
-        <p>Orange Cloud 7</p>
+    <div class="pre-header hidden-xs hidden-sm"></div>
+    <div class="menu-hamburger hidden-md hidden-lg" id='menu-hamburger'>
+        <button onclick="menu_change()">X</button>
+        zzzz
     </div>
-    <div class="nav">
-        <p>登録情報確認</p>
+    <div class="container-fluid container-header">
+        <div class="header">
+            <div class="icon-menu hidden-md hidden-lg">
+                <button onclick="menu_change()">X</button>
+            </div>
+            <p>Orange Cloud 7</p>
+        </div>
+        <div class="nav">
+            <p>登録情報確認</p>
+        </div>
     </div>
     <div class="container">
         <div class="content">
-            <div class="row">
-                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 d-flex justify-content-between">
+            <div class="row row-confirm">
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 d-flex justify-content-between col-confirm">
                     <p>お名前（姓名）</p>
                     <span class="span-required">必須</span>
                 </div>
-                <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
-                    <div class="row">
-                        <div class="form-group col-xs-6 col-sm-3 col-md-3 col-lg-3">
-                            <input type="text" name="first_name" class="form-control input-confirm input-required" placeholder="First name">
+                <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+                    <div class="form-group row form-confirm">
+                        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                            <input type="text" name="first_name" class="form-control input-confirm input-required" placeholder="セイ (山田) ">
                         </div>
-                        <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
-                            <input type="text" name="last_name" class="form-control input-confirm input-required" placeholder="Last name">
+                        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                            <input type="text" name="last_name" class="form-control input-confirm input-required" placeholder="メイ(太郎）">
                         </div>
                     </div>
                 </div>
             </div>
             
-            <div class="row">
-                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 d-flex justify-content-between">
+            <div class="row row-confirm">
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 d-flex justify-content-between col-confirm">
                     <p>お名前フリガナ（姓名）</p>
                     <span class="span-required">必須</span>
                 </div>
-                <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
-                    <div class="row">
-                        <div class="form-group col-xs-6 col-sm-3 col-md-3 col-lg-3">
-                            <input type="text" name="first_name_fri" class="form-control input-confirm input-required" placeholder="First name">
+                <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+                    <div class="form-group row form-confirm">
+                        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                            <input type="text" name="first_name_fri" class="form-control input-confirm input-required" placeholder="(ヤマダ）">
                         </div>
-                        <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
-                            <input type="text" name="last_name_fri" class="form-control input-confirm input-required" placeholder="Last name">
+                        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                            <input type="text" name="last_name_fri" class="form-control input-confirm input-required" placeholder="(タロウ）">
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 d-flex justify-content-between">
+            <div class="row row-confirm">
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 d-flex justify-content-between col-confirm">
                     <p>メールアドレス </p>
                     <span class="span-required">必須</span>
                 </div>
-                <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-7 col-md-7 col-lg-7">
-                            <input type="text" name="email" class="input-required w-100" placeholder="mail@example.com">
+                <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+                    <div class="form-group row form-confirm">
+                        <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+                            <input type="text" name="email" class="form-control input-confirm input-required " placeholder="例）mail@example.com">
                         </div>
                     </div>
                 </div>
             </div>
             
-            <div class="row">
-                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 d-flex justify-content-between">
+            <div class="row row-confirm">
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 d-flex justify-content-between col-confirm">
                     <p>郵便番号 </p>
                 </div>
-                <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
-                            <input type="text" name="code" class="w-100" placeholder="0123456789">
+                <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+                    <div class="form-group row form-confirm">
+                        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                            <input type="text" name="code" class="form-control input-confirm" placeholder="例) 0123456789">
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 d-flex justify-content-between">
+            <div class="row row-confirm">
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 d-flex justify-content-between col-confirm">
                     <p>住所（都道府県） </p>
-                    <span class="required">必須</span>
+                    <span class="span-required">必須</span>
                 </div>
-                <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                            <input type="text" name="adress" class="input-required w-100" placeholder="City adress">
+                <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+                    <div class="form-group row form-confirm">
+                        <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
+                            <select name="adress_city" id class="form-control input-confirm input-required">
+                                <option value="1">該当する都道府県を選択</option>
+                                <option value="2"> セキュ</option>
+                            </select>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 d-flex justify-content-between">
+            <div class="row row-confirm">
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 d-flex justify-content-between col-confirm">
                     <p>住所（市区町村郡以下）</p>
-                    <span class="required">必須</span>
+                    <span class="span-required">必須</span>
                 </div>
-                <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-7 col-md-7 col-lg-7">
-                            <input type="text" name="adress_detail" class="input-required w-100" placeholder="Detail adress">
+                <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+                    <div class="form-group row form-confirm">
+                        <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+                            <input type="text" name="adress_detail" class="form-control input-confirm input-required" placeholder="市区町村郡以下番地まで入力">
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 d-flex justify-content-between">
+            <div class="row row-confirm">
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 d-flex justify-content-between col-confirm">
                     <p>住所（建物・部屋）</p>
-                    <span class="required">必須</span>
+                    <span class="span-required">必須</span>
                 </div>
-                <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-7 col-md-7 col-lg-7">
-                            <input type="text" name="adress_home" class="input-required w-100" placeholder="Home adress">
+                <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+                    <div class="form-group row form-confirm">
+                        <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+                            <input type="text" name="adress_home" class="form-control input-confirm input-required" placeholder="建物名と部屋番号等を入力">
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 d-flex justify-content-between">
+            <div class="row row-confirm">
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 d-flex justify-content-between col-confirm">
                     <p>電話番号 </p>
-                    <span class="required">必須</span>
+                    <span class="span-required">必須</span>
                 </div>
-                <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                            <input type="text" name="phone_number" class="input-required w-100" placeholder="0964062210">
+                <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+                    <div class="form-group row form-confirm">
+                        <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
+                            <input type="text" name="phone_number" class="form-control input-confirm input-required" placeholder="ハイフン無しで入力">
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 d-flex justify-content-between">
+            <div class="row row-confirm">
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 d-flex justify-content-between col-confirm">
                     <p>パスワード  </p>
-                    <span class="required">必須</span>
+                    <span class="span-required">必須</span>
                 </div>
-                <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                            <input type="password" name="passwords" class="input-required">
+                <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+                    <div class="form-group row form-confirm">
+                        <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
+                            <input type="password" name="passwords" class="form-control input-confirm" placeholder="********">
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="btn">
-            <div class="row">
-                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                    <button class="button button-cancel">キャンセル</button>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                    <button class="button-accept">確定</button>
+
+            <div class="btn">
+                <div class="row">
+                    <div class="col-xs-0 col-sm-0 col-md-2 col-lg-2"></div>
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                        <button class="button button-cancel">キャンセル</button>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                        <button class="button-accept">確定</button>
+                    </div>
+                    <div class="col-xs-0 col-sm-0 col-md-2 col-lg-2"></div>
                 </div>
             </div>
         </div>
@@ -168,7 +236,8 @@
             Copyright © ORG 株式会社  
         </p>
     </div>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/bootstrap-select.min.js"></script>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="assets/js/menu-hamburger.js"></script>
 </body>
 </html>
