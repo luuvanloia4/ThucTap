@@ -8,71 +8,21 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/bootstrap-select.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <style>
-        @media screen and (max-width: 992px) {
-    .header {
-        display: flex;
-        height: 12vw;
-    }
-    .header p {
-        margin-left:3vw;
-        font-size:5vw;
-    }
-    .nav {
-        height: 13vw;
-    }
-    .nav p {
-        font-size:6vw;
-        padding-top:3vw
-    }
-    .content {
-        border: 0.3vw solid #FFCA86;
-        margin: 6vw 0;
-    }
-    .content p{
-        font-size: 4vw;
-    }
-    .span-required {
-        font-size: 3vw;
-        padding: 0.5vw 2vw;
-        border: 0.3vw solid #F55123;
-        height: 6vw;
-    }
-    .input-confirm {
-        font-size: 4vw;
-        height: 8vw;
-        margin-top: 2vw;
-        margin-bottom: 2vw;
-    }
-    .input-required {
-        border: 0.3vw solid #F55123;
-    }
-    .row-confirm {
-        border-bottom: 0.3vw dotted #FFCA86;
-    }
-    .col-confirm {
-        padding-top: 2vw;
-        border: 0px;
-        height: 9vw;
-    }
-    .btn button {
-        height: 10vw;
-        width: 70vw;
-    }
-}
-    </style>
-    <title>Orange Cloud 7</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>登録情報確認</title>
 </head>
 <body>
     <div class="pre-header hidden-xs hidden-sm"></div>
-    <div class="menu-hamburger hidden-md hidden-lg" id='menu-hamburger'>
-        <button onclick="menu_change()">X</button>
-        zzzz
+    <div class="menu-hamburger" id='menu-hamburger'>
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+        <a href="#">About</a>
     </div>
     <div class="container-fluid container-header">
         <div class="header">
             <div class="icon-menu hidden-md hidden-lg">
-                <button onclick="menu_change()">X</button>
+                <button class="btn-open-menu" id="btn-open" onclick="openMenu()">☰</button>
             </div>
             <p>Orange Cloud 7</p>
         </div>
@@ -215,8 +165,7 @@
                     </div>
                 </div>
             </div>
-
-            <div class="btn">
+            <div class="btn-confirm">
                 <div class="row">
                     <div class="col-xs-0 col-sm-0 col-md-2 col-lg-2"></div>
                     <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">

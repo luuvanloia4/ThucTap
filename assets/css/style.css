@@ -2,23 +2,19 @@
     font-family: japaneseFont;
     src: url(../fonts/glyphicons-halflings-regular.eot);
 }
-
 body {
     margin: 0px;
     position: relative;
 }
-
 .pre-header {
     height: 35.41px;
     background-color:#F5F5F5;
     border-bottom: 1px solid #D5D5D5;
 }
-
 .header {
     height: 83.61px;
     background-color:#FFFFFF;
 }
-
 .header p {
     text-align: center;
     font-size: 36px;
@@ -27,14 +23,12 @@ body {
     padding-top: 8px;
     margin: 0px;
 }
-
 .nav {
     background-color: #F58E0B;
     height: 100px;
     margin-block-start: 0px;
     margin-block-end: 0px;
 }
-
 .nav p {
     text-align: center;
     font-size: 36px;
@@ -42,7 +36,6 @@ body {
     padding-top: 20px;
     margin:0px;
 }
-
 .content {
     border: 1px solid  #FFCA86;
     border-radius: 5px;
@@ -50,13 +43,11 @@ body {
     margin: 20px 10%;
     
 }
-
 .content p{
     color: #4A4A4A;
     font-size: 1.3rem;
     flex-grow: 1;
 }
-
 .span-required {
     display:inline-block;
     color: #F84008;
@@ -67,46 +58,39 @@ body {
     width: auto;
     height: 20px;
 }
-
 .input-confirm {
     height: 30px;
     margin-top: 10px;
     margin-bottom: 11px;
 }
-
 .input-required {
     border: 1px solid #F55123;
     border-radius: 3px;
     background-color: #FEF3F2;
 }
-
-.btn {
+.btn-confirm {
     width: 100%;
 }
-
-.btn button {
+.btn-confirm button {
     height: 52px;
     border-radius: 5px;
     margin: 11px 0px;
     font-size: 24px;
     width: 100%;
 }
-
 .button-cancel {
     border: 1px solid #9B9B9B;
     color: #4A4A4A;
     background-color: #FFFFFF;
     margin-right: 15px;
 }
-
 .button-accept {
     border: 1px solid #979797;
     color: #FFFFFF;
     background-image: linear-gradient(to right, #F58E0B, #F84008);
     margin-left: 15px;
 }
-
-.btn button.print {
+.btn-confirm button.print {
     height: 52px;
     width: 570px;
     background-image: linear-gradient(to right, #F58E0B, #F84008);
@@ -117,8 +101,7 @@ body {
     font-size: 24px;
     color: #FFFFFF;
 }
-
-div.footer {
+.footer {
     height: 30px;
     width: 100%;
     border-top: 2px solid #F58E0B;
@@ -126,82 +109,156 @@ div.footer {
     bottom: 0px;
     background-color: #FFFFFF;
 }
-
-div.footer p {
+.footer p {
     color: #4A4A4A;
     font-size: 19px;
     text-align: center;
     margin: auto;
 }
-
 .d-flex {
     display: flex;
 }
-
 .d-flex-left {
     display: flex;
     justify-content: left;
 }
-
 .d-flex-right {
     display: flex;
     justify-content: right;
 }
-
 .justify-content-between {
     justify-content: space-between;
 }
-
 .row-confirm {
     margin: 0px;
     border-bottom: 1px dotted #FFCA86;
 }
-
 .col-confirm {
     padding-top: 20px;
     border-right: 1px solid #FFCA86;
     height: 51px;
 }
-
 .form-confirm {
     margin-bottom: 0px;
 }
-
 .p-confirm {
     margin-bottom: 0px;
 }
-
 .button-align-left {
     text-align: left;
 }
-
 .button-align-right {
     text-align: right;
 }
-
 .container-header {
     padding: 0px;
 }
-
-.menu-hamburger {
-    height: 100%;
-    background-color: #F58E0B;
-    opacity: 100%;
-    overflow: hidden;
+.btn-open-menu {
+    z-index: 2;
     position: absolute;
+    height: 12vw;
+    width: 12vw;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    font-size: 7vw;
+    top: 0;
+    left: 0;
+}
+.menu-hamburger {
+    height: 0;
+    width: 0;
+    padding-top: 5vh;
+    background-color: #F58E0B;
+    opacity: 90%;
+    overflow: hidden;
+    position: fixed;
+    z-index: 1;
     top: 0px;
     left: 0px;
-    bottom: 100vh;
-    right: 100vw;
-    transition: 1s;
-    /*margin-top: -100%;*/
+    transition: 0.5s;
 }
-
+.menu-hamburger a {
+    color: #4A4A4A;
+    text-align: center;
+    margin: 2vh 1vw;
+    display: block;
+    font-size: 7vw;
+    transition: 0.25s;
+}
+.menu-hamburger a:hover {
+    color: lightblue;
+}
 .icon-menu {
     width: 5rem;
     height: 5rem;
 }
-
 .pad-0 {
     padding: 0px;
+}
+@media screen and (max-width: 992px) {
+    .header {
+        display: flex;
+        height: 12vw;
+    }
+    .header p {
+        margin-left: 1vw;
+        font-size: 5vw;
+    }
+    .nav {
+        height: 13vw;
+    }
+    .nav p {
+        font-size:6vw;
+        padding-top:3vw
+    }
+    .content {
+        border: 0.3vw solid #FFCA86;
+        margin: 6vw 0;
+    }
+    .content p{
+        font-size: 4vw;
+    }
+    .span-required {
+        font-size: 3vw;
+        padding: 0.5vw 2vw;
+        border: 0.3vw solid #F55123;
+        height: 6vw;
+    }
+    .input-confirm {
+        font-size: 4vw;
+        height: 8vw;
+        margin-top: 2vw;
+        margin-bottom: 2vw;
+    }
+    .input-confirm option{
+        font-size: inherit;
+        height: inherit;
+    }
+    .input-required {
+        border: 0.3vw solid #F55123;
+    }
+    .row-confirm {
+        border-bottom: 0.3vw dotted #FFCA86;
+    }
+    .col-confirm {
+        padding-top: 2vw;
+        border: 0px;
+        height: 9vw;
+    }
+    .btn-confirm {
+        text-align: center;
+    }
+    .btn-confirm button {
+        height: 10vw;
+        width: 70vw;
+    }
+    .footer {
+        position: unset;
+        height: 10vw;
+    }
+    .footer p{
+        font-size: 5vw;
+        padding-top: 2vw;
+    }
 }

@@ -3,18 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-datepicker.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <style>
-        @media screen and (max-width: 970px){
-            div.pre-header, div.header, div.nav, div.footer {
-                width: 100%;
-            }
-            div.content {
-                width: 98%;
-            }
-        }
-    </style>
-    <title>Orange Cloud 7</title>
+    <title>領収書発行</title>
 </head>
 <body>
     <div class="pre-header"></div>
@@ -24,31 +16,48 @@
     <div class="nav">
         <p>領収書発行</p>
     </div>
-    <div class="content">
-        <div class="tb_reciept">
-            <table>
-                <tr>
-                    <td class="col1">注文日</td>
-                    <td class="col2">2017/26/06</td>
-                </tr>
-                <tr>
-                    <td class="col1">お申込み商品・サービス</td>
-                    <td class="col2">製品名1</td>
-                </tr>
-                <tr>
-                    <td class="col1">コース・価格</td>
-                    <td class="col2">３ヶ月フルコース　99,999円(税込み)</td>
-                </tr>
-                <tr>
-                    <td class="col1">入金確認日</td>
-                    <td class="col2">2017/27/06</td>
-                </tr>
-            </table>
-        </div>
-        <div class="btn">
-            <button class="print">領収書発行</button>
+    <div class="container">
+        <div class="content">
+            <div class="row row-confirm">
+                <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 col-confirm">
+                    <p>注文日</p>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7">
+                    <p>2017/26/06</p>
+                </div>
+            </div>
+            <div class="row row-confirm">
+                <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 col-confirm">
+                    <p>お申込み商品・サービス</p>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7">
+                    <p>製品名1</p>
+                </div>
+            </div>
+            <div class="row row-confirm">
+                <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 col-confirm">
+                    <p>コース・価格</p>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7">
+                    <p>３ヶ月フルコース　99,999円(税込み)</p>
+                </div>
+            </div>
+            <div class="row row-confirm">
+                <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 col-confirm">
+                    <p>入金確認日</p>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7">
+                    <p>2017/27/06</p>
+                </div>
+            </div>
+            
+            
+            <div class="btn-confirm">
+                <button class="print">領収書発行</button>
+            </div>
         </div>
     </div>
+    
     <div class="footer">
         <p>
             Copyright © ORG 株式会社  
