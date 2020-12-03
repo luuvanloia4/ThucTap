@@ -1,7 +1,7 @@
 
 function openMenu() {
-    var menu = document.getElementById('menu-hamburger');
-    var btn_open = document.getElementById('btn-open');
+    var menu = document.getElementById('menu');
+    var btn_open = document.getElementById('btn-menu');
     if(menu.style.width != '100vw'){
         menu.style.width = '100vw';
         btn_open.innerHTML = '&times;';

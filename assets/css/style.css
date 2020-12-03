@@ -20,8 +20,9 @@ body {
     font-size: 36px;
     color: #4A4A4A;
     height: 47.21px;
-    padding-top: 8px;
     margin: 0px;
+    display: inline-block;
+    vertical-align: center;
 }
 .nav {
     background-color: #F58E0B;
@@ -36,12 +37,16 @@ body {
     padding-top: 20px;
     margin:0px;
 }
-.content {
-    border: 1px solid  #FFCA86;
+.main {
+    padding: 32px 0 79px;
+}
+.main .container {
+    width: 970px;
+    border: 1px solid #FFCA86;
     border-radius: 5px;
-    background-color: #F5F5F5;
-    margin: 20px 10%;
-    
+}
+.main > .row {
+    border: 1px dotted #FFCA86;
 }
 .content p{
     color: #4A4A4A;
@@ -166,7 +171,7 @@ body {
     top: 0;
     left: 0;
 }
-.menu-hamburger {
+.menu {
     width: 0;
     height: 100vh;
     padding-top: 5vh;
@@ -177,9 +182,9 @@ body {
     z-index: 1;
     top: 0px;
     left: 0px;
-    transition: 0.5s;
+    transition: 0.3s;
 }
-.menu-hamburger a {
+.menu a {
     color: #4A4A4A;
     text-align: center;
     margin: 2vh 1vw;
@@ -187,7 +192,7 @@ body {
     font-size: 7vw;
     transition: 0.25s;
 }
-.menu-hamburger a:hover {
+.menu a:hover {
     color: lightblue;
 }
 .icon-menu {
@@ -195,7 +200,7 @@ body {
     height: 5rem;
 }
 .pad-0 {
-    padding: 0px;
+    padding: 0;
 }
 @media screen and (max-width: 992px) {
     .header {
