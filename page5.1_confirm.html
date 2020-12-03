@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/bootstrap-select.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>登録情報確認</title>
 </head>
 <body>
@@ -40,10 +39,10 @@
                 <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
                     <div class="form-group row form-confirm">
                         <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
-                            <input type="text" name="first_name" class="form-control input-confirm input-required" placeholder="セイ (山田) ">
+                            <input type="text" name="first_name" class="form-control input-confirm input-required input-select" id="input" placeholder="セイ (山田) ">
                         </div>
                         <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
-                            <input type="text" name="last_name" class="form-control input-confirm input-required" placeholder="メイ(太郎）">
+                            <input type="text" name="last_name" class="form-control input-confirm input-required input-select" id="input" placeholder="メイ(太郎）">
                         </div>
                     </div>
                 </div>
@@ -57,10 +56,10 @@
                 <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
                     <div class="form-group row form-confirm">
                         <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
-                            <input type="text" name="first_name_fri" class="form-control input-confirm input-required" placeholder="(ヤマダ）">
+                            <input type="text" name="first_name_fri" class="form-control input-confirm input-required input-select" placeholder="(ヤマダ）">
                         </div>
                         <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
-                            <input type="text" name="last_name_fri" class="form-control input-confirm input-required" placeholder="(タロウ）">
+                            <input type="text" name="last_name_fri" class="form-control input-confirm input-required input-select" placeholder="(タロウ）">
                         </div>
                     </div>
                 </div>
@@ -74,7 +73,7 @@
                 <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
                     <div class="form-group row form-confirm">
                         <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
-                            <input type="text" name="email" class="form-control input-confirm input-required " placeholder="例）mail@example.com">
+                            <input type="text" name="email" class="form-control input-confirm input-required input-select" placeholder="例）mail@example.com">
                         </div>
                     </div>
                 </div>
@@ -101,7 +100,7 @@
                 <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
                     <div class="form-group row form-confirm">
                         <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
-                            <select name="adress_city" id class="form-control input-confirm input-required">
+                            <select name="adress_city" class="form-control input-confirm input-required input-select">
                                 <option value="1">該当する都道府県を選択</option>
                                 <option value="2"> セキュ</option>
                             </select>
@@ -118,7 +117,7 @@
                 <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
                     <div class="form-group row form-confirm">
                         <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
-                            <input type="text" name="adress_detail" class="form-control input-confirm input-required" placeholder="市区町村郡以下番地まで入力">
+                            <input type="text" name="adress_detail" class="form-control input-confirm input-required input-select" placeholder="市区町村郡以下番地まで入力">
                         </div>
                     </div>
                 </div>
@@ -132,7 +131,7 @@
                 <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
                     <div class="form-group row form-confirm">
                         <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
-                            <input type="text" name="adress_home" class="form-control input-confirm input-required" placeholder="建物名と部屋番号等を入力">
+                            <input type="text" name="adress_home" class="form-control input-confirm input-required input-select" placeholder="建物名と部屋番号等を入力">
                         </div>
                     </div>
                 </div>
@@ -146,7 +145,7 @@
                 <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
                     <div class="form-group row form-confirm">
                         <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
-                            <input type="text" name="phone_number" class="form-control input-confirm input-required" placeholder="ハイフン無しで入力">
+                            <input type="text" name="phone_number" class="form-control input-confirm input-required input-select" placeholder="ハイフン無しで入力">
                         </div>
                     </div>
                 </div>
@@ -187,6 +186,6 @@
     </div>
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="assets/js/menu-hamburger.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
